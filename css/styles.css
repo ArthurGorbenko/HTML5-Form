@@ -272,7 +272,7 @@ input[type="radio"]:checked + .form-radio_choice_type_label::after {
   margin: 15px 65px 0 12px;
 }
 .form-upload_table {
-  margin-left: 3em;
+  margin:0 6em 0 3em;
   display: block;
   border-radius: 5px;
   border: 2px solid #cccccc;
@@ -1122,7 +1122,6 @@ input[type="checkbox"]:checked ~ .form-label_agree::after {
     margin-left: 4em;
   }
   .form-upload_table {
-    margin-left: 0;
     overflow-x: hidden;
   }
 
@@ -1131,7 +1130,7 @@ input[type="checkbox"]:checked ~ .form-label_agree::after {
     margin-left: -2em;
   }
   .input_card_data_title::before {
-    margin: 0.3em 0 0 -27em;
+    margin: 0.5em 0 0 -27.5gem;
   }
   .input_card_code_title::before {
     margin-left: -10em;
@@ -1145,7 +1144,6 @@ input[type="checkbox"]:checked ~ .form-label_agree::after {
   .wrapper_form-choose_paysystem {
     flex-direction: row;
     width: 100%;
-    justify-content: space-evenly;
   }
   .input_password_title::after {
     margin: -4.7em -1em 0 39em;
