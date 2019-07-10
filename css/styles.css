@@ -162,7 +162,7 @@ body {
   height: 30px;
   position: absolute;
   content: "";
-  margin: -0.5em 0 0 -2.5em;
+  margin: -0.3em 0 0 -2.5em;
 }
 .wrapper_form-header_info_content {
   margin: 1em 6em 1em;
@@ -1146,7 +1146,7 @@ input[type="checkbox"]:checked ~ .form-label_agree::after {
     margin-left: -2em;
   }
   .input_card_data_title::before {
-    margin: 0.5em 0 0 -27.5gem;
+    margin: 0.5em 0 0 -27.5em;
   }
   .input_card_code_title::before {
     margin-left: -10em;
