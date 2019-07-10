@@ -199,11 +199,12 @@ body {
   text-transform: uppercase;
   display: inline-block;
   margin: 2em;
-  width: 700px;
-  font-size: 2em;
+  padding-bottom: 0.5em;
+  width: auto;
+  font-size: 1.8em;
+  font-weight: 500;
   text-align: center;
   border-bottom: 1px solid #ccc;
-  text-align: center;
 }
 
 .form-radio_choice_type {
@@ -1029,7 +1030,6 @@ input[type="checkbox"]:checked ~ .form-label_agree::after {
     flex-direction: column;
   }
   .form-header_radio_text {
-    width: 100%;
     margin: 10px;
   }
   .wrapper_form-header_info_content {

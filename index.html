@@ -80,8 +80,8 @@
         </section>
         <div class="form-main">
           <div class="form-header_radio">
-            <span class="form-header_radio_text"
-              >Select what you want to translate</span
+            <h1 class="form-header_radio_text"
+              >Select what you want to translate</h2
             >
           </div>
           <section class="form-radio_choice_type">
@@ -90,6 +90,7 @@
               name="select_document"
               id="radio_website"
               class="visually__hidden"
+              required
             />
             <label for="radio_website" class="form-radio_choice_type_label">
               <span class="form-radio_choice_type_button">
@@ -106,6 +107,7 @@
               name="select_document"
               id="radio_documents"
               class="visually__hidden"
+              required
             />
             <label for="radio_documents" class="form-radio_choice_type_label">
               <span class="form-radio_choice_type_button">
@@ -122,6 +124,7 @@
               name="select_document"
               id="radio_social_acc"
               class="visually__hidden"
+              required
             />
             <label for="radio_social_acc" class="form-radio_choice_type_label">
               <span class="form-radio_choice_type_button">
@@ -227,6 +230,7 @@
                 name="tone"
                 id="casual"
                 class="visually__hidden"
+                required
               />
               <label for="casual" class="button form-select_tone_radio_label">
                 <span class="form-select_tone_icon casual"
@@ -238,6 +242,7 @@
                 name="tone"
                 id="corporate"
                 class="visually__hidden"
+                required
               />
               <label
                 for="corporate"
@@ -250,6 +255,7 @@
                 name="tone"
                 id="formal"
                 class="visually__hidden"
+                required
               />
               <label for="formal" class="button form-select_tone_radio_label">
                 <span class="form-select_tone_icon formal">Media/formal</span>
@@ -339,6 +345,7 @@
                 name="payment"
                 id="visa_mastercard"
                 class="visually__hidden radio_input_payment"
+                required
               />
               <label for="visa_mastercard" class="form-choose_payment_radio">
                 <img
@@ -357,6 +364,7 @@
                 name="payment"
                 id="paypal"
                 class="visually__hidden radio_input_payment"
+                required
               />
               <label
                 for="paypal"
@@ -369,6 +377,7 @@
                 name="payment"
                 id="amazon"
                 class="visually__hidden radio_input_payment"
+                required
               />
               <label
                 for="amazon"
@@ -388,6 +397,7 @@
                 placeholder="0000 0000 0000 0000"
                 minlength="16"
                 maxlength="16"
+                required
               />
               <span class="input_card_data_title card_number_title"></span>
               <input
@@ -396,6 +406,7 @@
                 placeholder="DD/MM/YY"
                 maxlength="6"
                 minlength="6"
+                required
               />
               <span class="input_card_data_title input_date_title"></span>
               <input
@@ -405,6 +416,7 @@
                 placeholder="000"
                 minlength="3"
                 maxlength="3"
+                required
               />
               <span class="input_card_data_title input_card_code_title"></span>
             </div>
