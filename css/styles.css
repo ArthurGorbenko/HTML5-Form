@@ -154,6 +154,14 @@ body {
 .form-header_info_title {
   text-align: left;
 }
+.form-header-link_phone,.form-header_info_email{
+  text-decoration: none;
+  color: #454964;
+}
+.form-header_info_email{
+  text-decoration: none;
+  color: #454964;
+}
 .form-header_info_title::before {
   background-image: url("../images/rescue.svg");
   background-size: 30px;
@@ -209,13 +217,7 @@ body {
   display: block;
   text-align: center;
 }
-/* .form-radio_choice_type_button {
-  outline: 1px solid #cccccc;
-  height: 260px;
-  width: 350px;
-  display: block;
-  text-align: center;
-} */
+
 .form-radio_choice_type_label:hover {
   outline: 2px solid #6ea9df;
   cursor: pointer;
