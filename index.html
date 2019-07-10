@@ -14,15 +14,13 @@
   </head>
   <body>
     <header class="page_header">
-      <button type="button" class="button page_header_button_back">
-        <h4 class="page_header_button_back_text">Go back</h4>
-      </button>
-      <img src="images/logo-header.png" alt="logo" class="header_logo" />
-      <input
-        type="button"
-        value="Sign in"
-        class="button page_header_button_forward"
-      />
+      <a class="button page_header_button_back" href="#">
+        Go back
+      </a>
+      <a href="#" class="header_link_home"><img src="images/logo-header.png" alt="logo" class="header_logo" /></a>
+      <a href="#" class="button page_header_button_sigh">
+        Sign up
+      </a>
     </header>
     <main>
       <form action="#" class="form">
@@ -34,10 +32,10 @@
               </h4>
               <table class="form-header_info_table">
                 <thead>
-                  <th class="form-header_status_table_cell">ITEMS</th>
-                  <th class="form-header_status_table_cell">DETAILS</th>
-                  <th class="form-header_status_table_cell">PRICE</th>
-                  <th class="form-header_status_table_cell">DELIVERY</th>
+                  <th class="form-header_status_table_cell table_headers">items</th>
+                  <th class="form-header_status_table_cell table_headers">details</th>
+                  <th class="form-header_status_table_cell table_headers">price</th>
+                  <th class="form-header_status_table_cell table_headers">delivery</th>
                 </thead>
                 <tbody>
                   <tr>
@@ -50,17 +48,17 @@
               </table>
             </div>
           </section>
-            <section class="wrapper_form-header_status_buttons">
-              <button
-                type="submit"
-                class="button submit_button form-header_submit_button"
-              >
-                Place order
-              </button>
-              <button type="button" class="button form-header_print_button">
-                Print a quote
-              </button>
-            </section>
+          <section class="wrapper_form-header_status_buttons">
+            <button
+              type="submit"
+              class="button submit_button form-header_submit_button"
+            >
+              Place order
+            </button>
+            <button type="button" class="button form-header_print_button">
+              Print a quote
+            </button>
+          </section>
           <section class="form-header_info">
             <div class="wrapper_form-header_info_content">
               <h4 class="form-header_titles form-header_info_title">

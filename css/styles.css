@@ -41,16 +41,41 @@ body {
   width: 150px;
   margin-top: 5em;
 }
-.page_header_button_back {
+.header_logo:hover {
+  outline: 1px solid #6ea9df;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 5px 3px rgba(81, 137, 247, 1);
+  -moz-box-shadow: 0px 0px 5px 3px rgba(81, 137, 247, 1);
+  box-shadow: 0px 0px 5px 3px rgba(81, 137, 247, 1);
+}
+.page_header_button_back,
+.page_header_button_sigh {
   margin-top: 5em;
   background: #edeef3;
+  text-decoration: none;
+  text-align: center;
+  line-height: 60px;
 }
-
-.page_header_button_forward {
-  margin-top: 5em;
-  background: #edeef3;
+.page_header_button_back::before {
+  content: "";
+  background: url("../images/left-arrow-key.svg") no-repeat;
+  background-size: 25px;
+  height: 25px;
+  width: 25px;
+  display: block;
+  position: absolute;
+  margin: 1.1em 0 0 0.6em;
 }
-
+.page_header_button_sigh::after {
+  content: "";
+  background: url("../images/profile.svg");
+  background-size: 20px;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  display: block;
+  margin: -2.6em 0 0 1em;
+}
 .button {
   width: 170px;
   height: 60px;
@@ -109,6 +134,9 @@ body {
   margin: 1.5em;
   padding: 10px 35px 10px 35px;
   text-align: left;
+}
+.table_headers{
+  text-transform: uppercase;
 }
 .wrapper_form-header_status_content {
   display: flex;
@@ -273,7 +301,7 @@ input[type="radio"]:checked + .form-radio_choice_type_label::after {
   margin: 15px 65px 0 12px;
 }
 .form-upload_table {
-  margin:0 6em 0 3em;
+  margin: 0 6em 0 3em;
   display: block;
   border-radius: 5px;
   border: 2px solid #cccccc;
@@ -917,10 +945,7 @@ input[type="checkbox"]:checked ~ .form-label_agree::after {
   .wrapper_form-header_info_content {
     margin: 1em 2em;
   }
-  .page_header_button_back,
-  .page_header_button_forward {
-    margin: 0;
-  }
+
   .form-table_cell_remove::before {
     position: relative;
   }
@@ -1008,7 +1033,7 @@ input[type="checkbox"]:checked ~ .form-label_agree::after {
   .wrapper_form-header_info_content {
     margin: 1em 2.5em;
   }
-  
+
   .form-table_cell_remove::before {
     position: relative;
   }
@@ -1082,7 +1107,7 @@ input[type="checkbox"]:checked ~ .form-label_agree::after {
     margin-top: 3em;
     justify-content: space-around;
   }
- 
+
   .form-radio_choice_type_label {
     width: 280px;
   }
@@ -1152,7 +1177,7 @@ input[type="checkbox"]:checked ~ .form-label_agree::after {
   .form {
     max-width: 1200px;
   }
-  .page_header{
+  .page_header {
     max-width: 1200px;
   }
   .form-main {
@@ -1198,7 +1223,7 @@ input[type="checkbox"]:checked ~ .form-label_agree::after {
   .form {
     max-width: 1400px;
   }
-  .page_header{
+  .page_header {
     max-width: 1400px;
   }
   .form-main {
