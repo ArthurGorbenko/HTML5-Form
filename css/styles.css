@@ -316,6 +316,7 @@ input[type="radio"]:checked + .form-radio_choice_type_label::after {
 .form-sections_headers_text {
   font-size: 28px;
   margin: 2em 0 2em 40px;
+  font-weight: 500;
 }
 .form-sections_headers_text::before {
   content: "1";
