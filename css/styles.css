@@ -1276,23 +1276,4 @@ input[type="checkbox"]:checked ~ .form-label_agree::after {
     margin-right: 3em;
   }
 }
-
-@media (min-width: 1800px) {
-  .form {
-    max-width: 1400px;
-  }
-  .page_header {
-    max-width: 1400px;
-  }
-  .form-main {
-    margin: 2em auto;
-    width: 1200px;
-    padding: 0 6em;
-  }
-  .footer_logo {
-    margin-right: 8em;
-  }
-  .form-header_info {
-    height: 190px;
-  }
-}
+ 
