@@ -44,7 +44,6 @@ body {
 .header_logo {
   height: 150px;
   width: 150px;
-  margin-top: 5em;
 }
 
 .header_logo:hover {
@@ -1048,6 +1047,10 @@ input[type="checkbox"]:checked ~ .form-label_agree::after {
   color: #ccc;
 }
 
+.footer_social_link:hover{
+  outline: 2px solid #6ea9df;
+}
+
 .form-footer-link_phone{
   text-decoration: none;
   color : #ccc;
@@ -1084,6 +1087,9 @@ input[type="checkbox"]:checked ~ .form-label_agree::after {
 .footer_logo {
   height: 150px;
   width: 150px;
+}
+.footer_logo:hover{
+  outline: 2px solid #6ea9df;
 }
 
 @media (max-width: 599px) {
@@ -1188,6 +1194,9 @@ input[type="checkbox"]:checked ~ .form-label_agree::after {
     width: 80%;
   }
 
+  .wrapper_agree_checkbox:hover{
+    outline: 2px solid #6ea9df;
+  }
   .form-label_agree::before,
   .form-label_agree::after {
     margin-left: 5em;
@@ -1232,6 +1241,10 @@ input[type="checkbox"]:checked ~ .form-label_agree::after {
 
   .form-table_cell_remove::before {
     position: relative;
+  }
+
+  .form-table_cell_remove:hover{
+    outline: 2px solid #6ea9df;
   }
 
   .wrapper_form-header_status_content {
