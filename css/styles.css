@@ -264,9 +264,9 @@ body {
   text-align: center;
 }
 
-input[type='radio']:focus + label,
-input[type='checkbox']:focus + label,
-input[type='range']:focus{
+input[type="radio"]:focus + label,
+input[type="checkbox"]:focus + label,
+input[type="range"]:focus {
   outline: 1px solid #6ea9df;
   cursor: pointer;
   -webkit-box-shadow: 0px 0px 5px 3px rgba(81, 137, 247, 1);
@@ -497,25 +497,25 @@ input[type="radio"]:checked + .form-radio_choice_type_label::after {
   margin: 2px 1em 1.2em 1em;
 }
 
-.form-selects_bottom{
+.form-selects_bottom {
   margin-right: 3em;
 }
 
-.form-select_remove{
+.form-select_remove {
   background: #fff;
   text-align: left;
   border: none;
   justify-content: flex-start;
 }
 
-.form-select_remove:hover{
+.form-select_remove:hover {
   outline: 2px solid #6ea9df;
   cursor: pointer;
 }
 
-.form-select_remove_images{
-height: 20px;
-width: 20px;
+.form-select_remove_images {
+  height: 20px;
+  width: 20px;
 }
 
 .form-wrapper_radio_tone_urgent {
@@ -613,7 +613,7 @@ input[type="radio"]:checked + .form-select_tone_radio_label::after {
   outline: none;
 }
 
-.form-range_input:hover{
+.form-range_input:hover {
   cursor: pointer;
   outline: 2px solid #6ea9df;
 }
@@ -717,25 +717,68 @@ input[type="radio"]:checked + .form-select_tone_radio_label::after {
   padding-left: 40px;
 }
 
-.form-sign_pay_method_header{
+.form-sign_pay_method_header {
   margin-left: 0;
 }
 
 .form-sign_pay_method_header::before {
   content: "5";
 }
+
 .form-sign_pay_method_link {
   margin-bottom: 1em;
   font-size: 18px;
   color: #99bbff;
 }
+
+.form-sign_pay_method_label {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin-right: 5em;
+}
+
+.label-logo-valid {
+  background: url("../images/not-valid.svg");
+  background-size: 30px;
+  height: 30px;
+  width: 30px;
+  display: block;
+  position: absolute;
+  margin: 2.6em 0 0 18em;
+  visibility: hidden;
+}
+
+.form-sign_pay_method_inputs:focus:invalid + .label-logo-valid {
+  visibility: visible;
+}
+
+.form-sign_pay_method_inputs:focus:valid + .label-logo-valid,
+.form-sign_pay_method_inputs:valid + .label-logo-valid {
+  visibility: visible;
+  background: url('../images/checked.png');
+  background-size: 30px;
+}
+
+.form_label_title {
+  font-size: 14px;
+  color: #6ea9df;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
 .form-sign_pay_method_inputs {
   padding: 5px 1em 5px;
-  margin: 2em 4em 2em 0;
+  margin: 0 4em 2em 0;
   width: 300px;
   height: 60px;
   border-radius: 5px;
   border: 1px solid #b3d7ff;
+}
+.wrapper_form-email_password {
+  display: flex;
+  justify-content: flex-start;
 }
 .form-sign_pay_method_inputs::placeholder {
   color: #457bad;
@@ -852,39 +895,23 @@ input[type="radio"]:checked + .form-select_tone_radio_label::after {
   display: flex;
 }
 
-.input_card_number {
-  width: 380px;
-  height: 50px;
-}
 .input_date {
-  width: 200px;
+  width: 150px;
+  margin-right: 2em;
 }
+
 .input_code {
   width: 100px;
 }
+
 .validate_on_focus:focus:invalid {
   outline: 1px solid red;
 }
+
 .validate_on_focus:focus:valid {
   outline: 1px solid #6ea9df;
 }
-.input_card_data_title::before {
-  content: "card number";
-  text-transform: uppercase;
-  display: block;
-  width: 150px;
-  height: 30px;
-  color: #99bbff;
-  margin-top: -6.5em;
-}
-.input_date_title::before {
-  content: "expiry date";
-  margin-top: -7.3em;
-}
-.input_card_code_title::before {
-  content: "code";
-  margin-top: -7em;
-}
+
 .form-submit {
   display: flex;
   justify-content: flex-end;
@@ -1013,19 +1040,24 @@ input[type="checkbox"]:checked ~ .form-label_agree::after {
   .form {
     width: 100%;
   }
+
   .form-header {
     flex-direction: column;
   }
+
   .form-header_status {
     flex-direction: column;
   }
+
   .form-header_radio_text {
     width: 100%;
     margin: 10px;
   }
+
   .form-radio_choice_type_label {
     margin-top: 2em;
   }
+
   .wrapper_form-header_info_content {
     margin: 1em 2em;
   }
@@ -1033,37 +1065,52 @@ input[type="checkbox"]:checked ~ .form-label_agree::after {
   .form-table_cell_remove::before {
     position: relative;
   }
+
   .wrapper_form-header_status_content {
     overflow-x: auto;
   }
+
   .wrapper_form-header_status_buttons {
     text-align: center;
     display: block;
   }
+
   .form-header_info {
     margin: 2em 2em;
   }
+
   .form-radio_choice_type {
     flex-direction: column;
   }
+
   .form-upload_table {
     overflow-x: auto;
   }
+
   .wrapper_form-selects {
     flex-direction: column;
   }
+
   .form-wrapper_radio_tone_urgent {
     flex-direction: column;
   }
+
   .form-range_urgent {
     width: 100%;
   }
+
+  .wrapper_form-email_password {
+    flex-direction: column;
+  }
+
   .wrapper_form-choose_paysystem {
     flex-direction: column;
   }
+
   .wrapper_form-card_number {
     flex-direction: column;
   }
+
   .form-footer {
     box-sizing: content-box;
     padding-left: 5em;
@@ -1071,28 +1118,35 @@ input[type="checkbox"]:checked ~ .form-label_agree::after {
     height: 100%;
     justify-content: flex-end;
   }
+
   .form-footer_block {
     height: 100%;
     width: 100%;
   }
+
   .footer_logo {
     width: 150px;
     height: 150px;
   }
+
   .form-footer_info_text {
     margin: 0;
   }
+
   .form-submit_input {
     margin: 1em 0;
     width: 80%;
   }
+
   .form-label_agree::before,
   .form-label_agree::after {
     margin-left: 5em;
   }
+
   .input_password_title::before {
     margin-left: 0;
   }
+
   .form-submit {
     display: block;
     padding: 0 0 0 2em;
@@ -1181,10 +1235,12 @@ input[type="checkbox"]:checked ~ .form-label_agree::after {
   .form {
     width: 100%;
   }
+
   .form-main {
     margin: 2em 3em;
     width: 90%;
   }
+
   .form-radio_choice_type {
     flex-direction: row;
     margin-top: 3em;
@@ -1194,32 +1250,41 @@ input[type="checkbox"]:checked ~ .form-label_agree::after {
   .form-radio_choice_type_label {
     width: 280px;
   }
+
   .form-submit {
     display: flex;
     justify-content: center;
   }
+
   .form-submit_input {
     margin-right: 2em;
     width: 170px;
   }
+
   .wrapper_form-selects {
     flex-direction: row;
   }
+
   .wrapper_agree_checkbox {
     padding-top: 30px;
   }
+
   .form-wrapper_radio_tone_urgent {
     flex-direction: row;
   }
+
   input[type="radio"]:checked + .form-radio_choice_type_label::after {
     margin: -16em 0 0 16em;
   }
+
   .input_password_title::before {
     margin: -9.8em 0 0 34em;
   }
+
   .form-range_urgent {
     margin-left: 4em;
   }
+
   .form-upload_table {
     overflow-x: hidden;
   }
@@ -1228,28 +1293,24 @@ input[type="checkbox"]:checked ~ .form-label_agree::after {
   .form-label_agree::after {
     margin-left: -2em;
   }
-  .input_card_data_title::before {
-    margin: 0.5em 0 0 -27.5em;
-  }
-  .input_card_code_title::before {
-    margin-left: -10em;
-  }
-  .input_date_title::before {
-    margin-left: -16em;
-  }
+
   .form-header_info {
     flex: initial;
   }
+
   .wrapper_form-choose_paysystem {
     flex-direction: row;
     width: 100%;
   }
+
   .input_password_title::after {
     margin: -4.7em -1em 0 39em;
   }
+
   .wrapper_form-card_number {
     flex-direction: row;
   }
+
   .form-footer {
     flex-direction: row;
     height: 400px;
@@ -1260,14 +1321,17 @@ input[type="checkbox"]:checked ~ .form-label_agree::after {
   .form {
     max-width: 1200px;
   }
+
   .page_header {
     max-width: 1200px;
   }
+
   .form-main {
     margin: 2em 3em;
     width: 90%;
     padding: 0 4em 0 2em;
   }
+
   .form-header_info {
     margin-left: 1em;
     height: 100%;
@@ -1279,7 +1343,7 @@ input[type="checkbox"]:checked ~ .form-label_agree::after {
   .wrapper_form-header_status_buttons {
     padding-top: 20px;
   }
-  
+
   .form-radio_choice_type {
     margin-top: 2em;
   }
@@ -1310,6 +1374,4 @@ input[type="checkbox"]:checked ~ .form-label_agree::after {
   .footer_logo {
     margin-right: 3em;
   }
-
 }
- 

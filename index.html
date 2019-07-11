@@ -313,13 +313,15 @@
             <h3 class="form-sections_headers_text form-sign_pay_method_header">
               Sign up and choose a payment method
             </h3>
-              <span class="form-sign_pay_method_link"
-                >Already have an account with us ?<a
-                  href="#"
-                  class="form-sign_pay_method_link"
-                  >Sign in</a
-                ></span
-              >
+            <span class="form-sign_pay_method_link"
+              >Already have an account with us ?<a
+                href="#"
+                class="form-sign_pay_method_link"
+                >Sign in</a
+              ></span
+            >
+            <label class="form-sign_pay_method_label">
+              <span class="form_label_title"> Full name</span>
               <input
                 type="text"
                 id="input_enter_name"
@@ -331,8 +333,11 @@
                 pattern="^[a-zA-Z]+$"
                 required
               />
-              <span class="input_name title"></span>
-              <div class="wrapper_form-email_password">
+              <div class='label-logo-valid'/></div>
+            </label>
+            <div class="wrapper_form-email_password">
+              <label class="form-sign_pay_method_label">
+                <span class="form_label_title"> Email Adress</span>
                 <input
                   type="email"
                   placeholder="example@domaine.com"
@@ -341,7 +346,10 @@
                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                   required
                 />
-                <span class="input_name input_email_title"></span>
+                <div class='label-logo-valid'/></div>
+              </label>
+              <label class="form-sign_pay_method_label">
+                <span class="form_label_title">Choose a password</span>
                 <input
                   type="password"
                   name=""
@@ -350,91 +358,98 @@
                   title="Minimum 8 characters password,should have UPPERCASE, lowercase and Number"
                   required
                 />
-                <span class="input_name input_password_title"></span>
-              </div>
-              <div class="wrapper_form-choose_paysystem">
-                <input
-                  type="radio"
-                  name="payment"
-                  id="visa_mastercard"
-                  class="visually__hidden radio_input_payment"
-                  required
+                <div class='label-logo-valid'/></div>
+              </label>
+            </div>
+            <div class="wrapper_form-choose_paysystem">
+              <input
+                type="radio"
+                name="payment"
+                id="visa_mastercard"
+                class="visually__hidden radio_input_payment"
+                required
+              />
+              <label for="visa_mastercard" class="form-choose_payment_radio">
+                <img
+                  src="images/mastercard.svg"
+                  alt="mastercards_icon"
+                  class="icon_paymethod"
                 />
-                <label for="visa_mastercard" class="form-choose_payment_radio">
-                  <img
-                    src="images/mastercard.svg"
-                    alt="mastercards_icon"
-                    class="icon_paymethod"
-                  />
-                  <img
-                    src="images/visa.svg"
-                    alt="visa_icon"
-                    class="icon_paymethod"
-                  />
-                </label>
-                <input
-                  type="radio"
-                  name="payment"
-                  id="paypal"
-                  class="visually__hidden radio_input_payment"
-                  required
+                <img
+                  src="images/visa.svg"
+                  alt="visa_icon"
+                  class="icon_paymethod"
                 />
-                <label
-                  for="paypal"
-                  class="form-choose_payment_radio paypal_label"
-                >
-                  <img src="images/paypal.svg" alt="" class="icon_paypal" />
-                </label>
-                <input
-                  type="radio"
-                  name="payment"
-                  id="amazon"
-                  class="visually__hidden radio_input_payment"
-                  required
+              </label>
+              <input
+                type="radio"
+                name="payment"
+                id="paypal"
+                class="visually__hidden radio_input_payment"
+                required
+              />
+              <label
+                for="paypal"
+                class="form-choose_payment_radio paypal_label"
+              >
+                <img src="images/paypal.svg" alt="" class="icon_paypal" />
+              </label>
+              <input
+                type="radio"
+                name="payment"
+                id="amazon"
+                class="visually__hidden radio_input_payment"
+                required
+              />
+              <label
+                for="amazon"
+                class="form-choose_payment_radio amazon_label"
+              >
+                <img
+                  src="images/amazon.svg"
+                  alt="amazon icon"
+                  class="icon_amazon"
                 />
-                <label
-                  for="amazon"
-                  class="form-choose_payment_radio amazon_label"
-                >
-                  <img
-                    src="images/amazon.svg"
-                    alt="amazon icon"
-                    class="icon_amazon"
-                  />
-                </label>
-              </div>
-              <div class="wrapper_form-card_number">
+              </label>
+            </div>
+            <div class="wrapper_form-card_number">
+              <label class="form-sign_pay_method_label">
+                <span class="form_label_title">Card number</span>
                 <input
                   type="text"
-                  class="form-sign_pay_method_inputs  input_card_number validate_on_focus"
+                  class="form-sign_pay_method_inputs validate_on_focus"
                   placeholder="0000 0000 0000 0000"
+                  autocomplete="cc-number"
                   minlength="16"
                   maxlength="16"
                   required
                 />
-                <span class="input_card_data_title card_number_title"></span>
+              </label>
+              <label class="form-sign_pay_method_label">
+                <span class="form_label_title">Expiry date</span>
                 <input
                   type="datetime"
-                  class=" form-sign_pay_method_inputs  input_date validate_on_focus"
+                  class=" form-sign_pay_method_inputs input_date validate_on_focus"
                   placeholder="DD/MM/YY"
                   maxlength="6"
                   minlength="6"
+                  autocomplete="cc-exp"
                   required
                 />
-                <span class="input_card_data_title input_date_title"></span>
+              </label>
+              <label class="form-sign_pay_method_label">
+                <span class="form_label_title">Code</span>
                 <input
                   type="text"
-                  class="form-sign_pay_method_inputs  input_code validate_on_focus"
+                  class="form-sign_pay_method_inputs input_code validate_on_focus"
                   inputmode="numeric"
                   placeholder="000"
                   minlength="3"
                   maxlength="3"
                   required
                 />
-                <span
-                  class="input_card_data_title input_card_code_title"
-                ></span>
-              </div>
+              </label>
+            </div>
           </section>
         </div>
         <section class="form-submit">
