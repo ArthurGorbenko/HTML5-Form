@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <link
@@ -177,7 +177,6 @@
                 </th>
                 <th class="form-table_cell form-table_cell_headers">remove</th>
               </thead>
-
               <tbody>
                 <tr class="form-upload_table_row">
                   <td class="form-table_cell form-table_cell_file_name">
@@ -199,36 +198,40 @@
             </table>
           </section>
           <section class="form-language_choice">
-            <h3
-              class="form-sections_headers_text form-language_choice_header"
-            >
+            <h3 class="form-sections_headers_text form-language_choice_header">
               Choose your languages pairings
             </h3>
-            <span class="form-select_custom">
+            <div class="form-select_custom">
               <span class="select_from"></span>
               <select name="languages" class="button form-selects" required>
                 <option value="eng">English</option>
                 <option value="german">German</option>
                 <option value="сhinese">Chinese</option>
               </select>
-            </span>
+            </div>
             <div class="wrapper_form-selects">
               <span class="select_from select_to"></span>
-              <span class="form-select_custom form-selects_bottom">
+              <div class="form-select_custom form-selects_bottom">
                 <select name="languages" class="button form-selects">
                   <option value="arabian">Arabian</option>
                   <option value="hindi">Hindi</option>
                   <option value="french">French</option>
                 </select>
-              </span>
-              <span class="form-selects_bottom form-select_custom">
+              </div>
+              <div class="form-selects_bottom form-select_custom remove_button">
                 <select name="languages" class="button form-selects">
                   <option value="hindi">Hindi</option>
                   <option value="arabian">Arabian</option>
                   <option value="french">French</option>
                 </select>
-                <div class="form-select_remove"></div>
-              </span>
+                <button type="button" class="form-select_remove">
+                  <img
+                    src="images/waste-bin.svg"
+                    alt="icon remove"
+                    class="form-select_remove_images"
+                  />
+                </button>
+              </div>
               <button type="button" class="button form-select_add">
                 <span class="form-select_add_text">Add</span>
               </button>
@@ -236,9 +239,7 @@
           </section>
           <div class="form-wrapper_radio_tone_urgent">
             <section class="form-select_tone">
-              <h3
-                class="form-sections_headers_text form-select_tone_header"
-              >
+              <h3 class="form-sections_headers_text form-select_tone_header">
                 Select your tone
               </h3>
               <input
@@ -309,9 +310,7 @@
             </section>
           </div>
           <section class="form-sign_pay_method">
-            <h3
-              class="form-sections_headers_text form-sign_pay_method_header"
-            >
+            <h3 class="form-sections_headers_text form-sign_pay_method_header">
               Sign up and choose a payment method
             </h3>
 
