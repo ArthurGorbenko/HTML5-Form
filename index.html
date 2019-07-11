@@ -333,7 +333,7 @@
                 pattern="^[a-zA-Z]+$"
                 required
               />
-              <div class='label-logo-valid'/></div>
+              <div class="label-logo-valid"></div>
             </label>
             <div class="wrapper_form-email_password">
               <label class="form-sign_pay_method_label">
@@ -346,7 +346,7 @@
                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                   required
                 />
-                <div class='label-logo-valid'/></div>
+                <div class="label-logo-valid"></div>
               </label>
               <label class="form-sign_pay_method_label">
                 <span class="form_label_title">Choose a password</span>
@@ -358,7 +358,7 @@
                   title="Minimum 8 characters password,should have UPPERCASE, lowercase and Number"
                   required
                 />
-                <div class='label-logo-valid'/></div>
+                <div class="label-logo-valid"></div>
               </label>
             </div>
             <div class="wrapper_form-choose_paysystem">
@@ -456,7 +456,7 @@
           <div class="wrapper_agree_checkbox">
             <input
               type="checkbox"
-              name=""
+              name="checkbox"
               id="agree"
               class="visually__hidden"
               required
@@ -482,6 +482,7 @@
       </form>
     </main>
     <footer class="form-footer">
+      <div class="wrapper_footer_content">
       <section class=" form-footer_block form-footer_info">
         <h4 class="form-footer_info_header">What we do</h4>
         <p class="form-footer_info_text">
@@ -498,7 +499,11 @@
         <ul class="form-footer_list">
           <li class="form-footer_li">Dubai,UAE</li>
           <li class="form-footer_li">P.O.Box : 502735</li>
-          <li class="form-footer_li">Phone:+971(0) 44278128</li>
+          <li class="form-footer_li">
+            <a href="tel:+971044278128" class="form-footer-link_phone"
+              >Phone:+971(0) 44278128</a
+            >
+          </li>
         </ul>
       </section>
       <section class="form-footer_block form-footer_contacts">
@@ -522,6 +527,7 @@
         alt="footer logo"
         class="form-footer_block footer_logo"
       />
+    </div>
     </footer>
   </body>
 </html>
