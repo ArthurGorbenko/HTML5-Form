@@ -56,7 +56,7 @@ body {
 
 .page_header_button_back,
 .page_header_button_sigh {
-  margin-top: 5em;
+  margin: auto 0;
   background: #edeef3;
   text-decoration: none;
   text-align: center;
