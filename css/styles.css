@@ -344,6 +344,10 @@ input[type="radio"]:checked + .form-radio_choice_type_label::after {
   text-align: center;
 }
 
+#form-upload:focus + .form-upload_button_label {
+  outline: 2px solid #6ea9df;
+}
+
 .form-upload_button_label_text {
   padding-left: 30px;
   color: #707790;
