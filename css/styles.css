@@ -998,16 +998,15 @@ input[type="checkbox"]:checked ~ .form-label_agree::after {
 }
 
 .form-footer {
-  height: 400px;
-  width: 100%;
+  /* height: 400px;
+  width: 100%; */
   background: #454964;
+  color: #ccc;
 }
 
 .form-footer_block {
-  margin-top: 5em;
-  height: 300px;
+  padding: 1em 0 1em 3em;
   width: 200px;
-  color: #ccc;
 }
 
 .form-footer_info_header {
@@ -1070,7 +1069,7 @@ input[type="checkbox"]:checked ~ .form-label_agree::after {
 
 .footer_social_link::before {
   content: "";
-  background: url("../images/facebook-logo-button.svg");
+  background: url("../images/facebook-logo-button.svg") no-repeat;
   display: block;
   position: absolute;
   background-size: 17px;
@@ -1080,20 +1079,26 @@ input[type="checkbox"]:checked ~ .form-label_agree::after {
 }
 
 .twitter::before {
-  background: url("../images/twitter-logo.png");
+  background: url("../images/twitter-logo.png") no-repeat;
 }
 
 .linkedin::before {
-  background: url("../images/linkedin-logo.png");
+  background: url("../images/linkedin-logo.png") no-repeat;
 }
 
 .social-links-list {
   padding-inline-start: 30px;
 }
 
+.wrapper_footer-logo {
+  padding: 0;
+  text-align: right;
+  width: 120px;
+}
+
 .footer_logo {
-  height: 150px;
-  width: 150px;
+  height: 120px;
+  width: 120px;
 }
 .footer_logo:hover {
   outline: 2px solid #6ea9df;
@@ -1174,28 +1179,6 @@ input[type="checkbox"]:checked ~ .form-label_agree::after {
     flex-direction: column;
   }
 
-  .form-footer {
-    box-sizing: content-box;
-    padding-left: 5em;
-    flex-direction: column;
-    height: 100%;
-    justify-content: flex-end;
-  }
-
-  .form-footer_block {
-    height: 100%;
-    width: 100%;
-  }
-
-  .footer_logo {
-    width: 150px;
-    height: 150px;
-  }
-
-  .form-footer_info_text {
-    margin: 0;
-  }
-
   .form-submit_input {
     margin: 1em 0;
     width: 80%;
@@ -1212,9 +1195,14 @@ input[type="checkbox"]:checked ~ .form-label_agree::after {
   .input_password_title::before {
     margin-left: 0;
   }
+  
+  .form-footer_block {
+    margin: 2em auto;
+  }
 
-  .wrapper_footer_content {
-    padding-top: 2em;
+  .footer_logo {
+    height: 120px;
+    width: 120px;
   }
 
   .form-submit {
@@ -1285,12 +1273,6 @@ input[type="checkbox"]:checked ~ .form-label_agree::after {
     flex-direction: column;
   }
 
-  .form-footer {
-    flex-direction: column;
-    height: 100%;
-    justify-content: flex-end;
-  }
-
   .form-submit_input {
     margin: 1em 0;
     width: 80%;
@@ -1304,26 +1286,20 @@ input[type="checkbox"]:checked ~ .form-label_agree::after {
     margin-left: 0;
   }
 
-  .wrapper_footer_content {
-    display: block;
-    padding: 2em 5em;
-  }
-
   .form-submit {
     display: block;
     padding: 0 0 0 2em;
     text-align: center;
   }
 
-  .form-footer_block {
-    height: 100%;
-    width: 100%;
-    margin: 5em 5em 2em 2em;
+  .footer_logo {
+    height: 120px;
+    width: 120px;
+    padding: 5px 0 5px 5px;
   }
 
-  .footer_logo {
-    width: 150px;
-    height: 150px;
+  .form-footer_block {
+    margin: 2em auto;
   }
 }
 
@@ -1407,20 +1383,18 @@ input[type="checkbox"]:checked ~ .form-label_agree::after {
     flex-direction: row;
   }
 
-  .form-footer {
-    text-align: center;
+  .wrapper_footer_content {
+    display: flex;
+    justify-content: space-between;
+    padding: 5em 0;
   }
 
   .form-footer_block {
-    margin: 2em 1em;
+    width: 200px;
+    margin: 0;
   }
-
-  .wrapper_footer_content {
-    display: flex;
-    flex-direction: row;
-    margin: 1em auto;
-    justify-content: space-around;
-    text-align: left;
+  .wrapper_footer-logo {
+    width: 120px;
   }
 }
 
@@ -1471,26 +1445,11 @@ input[type="checkbox"]:checked ~ .form-label_agree::after {
     justify-content: flex-end;
   }
 
-  .form-footer {
-    text-align: center;
-  }
-
-  .wrapper_footer_content {
-    width: 1200px;
-    margin: 1em auto;
-    justify-content: space-between;
-    text-align: left;
-  }
-
   .form-submit_input {
     margin-right: 2em;
   }
-
-  .form-footer_info_text {
-    width: 300px;
-  }
-
-  .footer_logo {
-    margin-right: 3em;
+  .wrapper_footer_content {
+    width: 1200px;
+    margin: 0 auto;
   }
 }
