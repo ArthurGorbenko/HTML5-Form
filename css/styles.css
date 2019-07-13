@@ -475,6 +475,11 @@ input[type="radio"]:checked + .form-radio_choice_type_label::after {
   margin-left: -2em;
 }
 
+.form-select_custom,
+.wrapper_form-selects {
+  padding-left: 3.2em;
+}
+
 .form-select_custom::after {
   content: "";
   display: block;
@@ -526,6 +531,7 @@ input[type="radio"]:checked + .form-radio_choice_type_label::after {
 
 .form-selects_bottom {
   margin-right: 3em;
+  padding-left: 0px;
 }
 
 .form-select_remove {
