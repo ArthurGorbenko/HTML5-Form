@@ -264,7 +264,6 @@ body {
 }
 
 input[type="radio"]:focus + label,
-input[type="checkbox"]:focus + label,
 input[type="range"]:focus {
   outline: 1px solid #6ea9df;
   cursor: pointer;
@@ -960,6 +959,10 @@ input[type="radio"]:checked + .form-select_tone_radio_label::after {
   margin: 0 0 -2.4em -2em;
 }
 
+#agree:focus + .form-label_agree::before {
+  outline: 2px solid #6ea9df;
+}
+
 .form-label_agree::after {
   content: "";
   display: block;
@@ -998,8 +1001,6 @@ input[type="checkbox"]:checked ~ .form-label_agree::after {
 }
 
 .form-footer {
-  /* height: 400px;
-  width: 100%; */
   background: #454964;
   color: #ccc;
 }
